@@ -1,0 +1,58 @@
+Write java Program on Hospital Bed Enquiry systems. Try to use Interface
+if possible. Store all the data taken input via scanner.
+Submission Guideline: Please create a new repo named
+‘zorba_Assignment_submission’ and then inside create project names
+‘HospitalSystems’ and push to GitHub and add me as collaborator.
+
+PART A:
+Create a table named 'Hospital_Bed_info' add column as 'bed_id'(primary key),
+'bed_type', 'bed_charges_rate', 'hospital_id'(foreign key).
+Create a class names HospitalBedInfo with instance variables as 'bedType',
+'bedId', 'bedChargesRate’, ‘hospital_id’.
+Take input of all these above 3 parameter (There will be 2 rows in the
+‘Hospital_Bed_info’ tables as mentioned below)
+bedId = BE01, bedType = Emergency, bedChargesRate = $50 per day.
+bedId = BN01, bedType = Regular, bedChargesRate = $30 per day.
+Store above data into database using jdbc.
+Create 2 new table named 'Hospital' and add column as 'hospital_id', (primary
+key) 'hospital_name', 'patient_id' (foreign key)
+and 'Patient' add column as 'patient_id',(primary key)
+'patient_name', 'patient_type', 'no_of_Days', 'total_Bed_Charges'.
+Create a class name Hospital with instance variables like 'hospitalId',
+'hospitalName'
+
+Take input as 'hospitalId', 'hospitalName'
+another class name Patent with instance variables like 'patientId',
+
+'patientName', 'patientType' (Critical/Normal), noOfDays
+
+Take input as 'patientId', 'patientName', 'patientType', 'noOfDays'.
+If Patient type is critical then get from 'Hospital_Bed_info' table as
+bedType -> Emergency and bedId -> BE01 and totalBedCharges need to be
+calculated where bedChargesRate would be $50 per day,
+
+If Patient type is Normal then then get from 'Hospital_Bed_info' table
+as bedType -> Regular and bedId -> BN01 and totalBedCharges need to be
+calculated where bedChargesRate would be $30 per day,
+** totalBedCharges calculation formula below:
+
+totalBedCharges = (bedChargesRate * noOfDays);
+
+PART B:
+
+1.
+2.
+3.
+4.
+5.
+6.
+Once all data inserted to corresponding columns in the respective table, then
+we need to store the below information to the excel file.
+We need to store:
+Hospital name
+Patient name
+Patient Type
+Bed Type
+No Of Days
+Total Bed Charges.
+Hint: Use join to get the above information for the above 3 tables.
